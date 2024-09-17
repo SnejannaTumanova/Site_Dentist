@@ -3117,7 +3117,7 @@ textarea.w-select {
 }
 
 .line-txt-3 {
-  background-image: url('images/question.webp');
+  background-image: url('/images/question.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
