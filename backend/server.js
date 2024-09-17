@@ -9,9 +9,9 @@ const port = 3000;
 app.use(
   cors({
     origin: [
-      'https://snejannatumanova.github.io/site_Stom/',
+      'https://snejannatumanova.github.io',
       'http://localhost:3000',
-      'http://127.0.0.1:5500', // Добавьте этот источник
+      'http://127.0.0.1:5500',
     ],
     methods: ['GET', 'POST'],
   })
