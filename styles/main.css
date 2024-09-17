@@ -518,20 +518,6 @@ button,
   margin: 0 0 15px;
 }
 
-.w-form-done {
-  text-align: center;
-  background-color: #ddd;
-  padding: 20px;
-  display: none;
-}
-
-.w-form-fail {
-  background-color: #ffdede;
-  margin-top: 10px;
-  padding: 10px;
-  display: none;
-}
-
 label {
   margin-bottom: 5px;
   font-weight: bold;
@@ -2442,7 +2428,7 @@ textarea.w-select {
   color: #000;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  line-height: 160%;
+  /* line-height: 160%; */
 }
 
 .vector {
@@ -2990,6 +2976,46 @@ textarea.w-select {
 .list-15,
 .list-16 {
   font-size: 16px;
+}
+
+.w-form-done {
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2em;
+  background-color: #ddd;
+  padding: 20px;
+  z-index: 100;
+  display: none;
+}
+
+.w-form-fail {
+  border-radius: 15px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #ffdede;
+  padding: 20px;
+  z-index: 100;
+  display: none;
+}
+
+.w-form-done-2 {
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2em;
+  background-color: #ddd;
+  padding: 20px;
+  z-index: 100;
+  display: none;
+}
+
+.w-form-fail-2 {
+  border-radius: 15px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #ffdede;
+  padding: 20px;
+  z-index: 100;
+  display: none;
 }
 
 .div-block-25 {

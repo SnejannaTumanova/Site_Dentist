@@ -8,10 +8,15 @@ const app = express();
 const port = 3000;
 app.use(
   cors({
-    origin: 'https://snejannatumanova.github.io/site_Stom/',
+    origin: [
+      'https://snejannatumanova.github.io/site_Stom/',
+      'http://localhost:3000',
+      'http://127.0.0.1:5500', // Добавьте этот источник
+    ],
     methods: ['GET', 'POST'],
   })
 );
+
 app.use(bodyParser.urlencoded({ extended: true })); // Для application/x-www-form-urlencoded
 app.use(bodyParser.json());
 

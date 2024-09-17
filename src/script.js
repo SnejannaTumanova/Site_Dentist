@@ -70,6 +70,28 @@ function clearForm() {
   field.value = '';
 }
 
+function showRes(status) {
+  if (status === 200) {
+    form.style.display = 'none';
+    const resOk = document.querySelector('.w-form-done-2');
+    resOk.style.display = 'flex';
+    setTimeout(() => {
+      resOk.style.display = 'none';
+      form.style.display = 'flex';
+      blockForm.style.display = 'none';
+    }, 3000);
+  } else {
+    form.style.display = 'none';
+    const resNotOk = document.querySelector('.w-form-fail-2');
+    resNotOk.style.display = 'flex';
+    setTimeout(() => {
+      resOk.style.display = 'none';
+      form.style.display = 'flex';
+      blockForm.style.display = 'none';
+    }, 3000);
+  }
+}
+
 function sendFormData(formData) {
   fetch('http://localhost:3000/sendmail', {
     method: 'POST',
@@ -80,8 +102,10 @@ function sendFormData(formData) {
   })
     .then((response) => {
       return response.text().then((text) => {
+        console.log(text);
         if (response.ok) {
           clearForm();
+          showRes(200);
         } else {
           throw new Error('Ошибка отправки сообщения: ' + text);
         }
