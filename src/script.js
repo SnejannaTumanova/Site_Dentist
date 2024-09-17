@@ -74,6 +74,7 @@ function showRes(status) {
   if (status === 200) {
     form.style.display = 'none';
     const resOk = document.querySelector('.w-form-done-2');
+    console.log(resOk);
     resOk.style.display = 'flex';
     setTimeout(() => {
       resOk.style.display = 'none';
