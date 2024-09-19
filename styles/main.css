@@ -3,7 +3,6 @@ article,
 aside,
 details,
 figcaption,
-figure,
 footer,
 header,
 hgroup,
@@ -88,46 +87,6 @@ sub {
   bottom: -0.25em;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-pre {
-  overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace;
-  font-size: 1em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-button {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
 button,
 html input[type='button'],
 input[type='reset'] {
@@ -162,20 +121,6 @@ input[type='number']::-webkit-outer-spin-button {
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-optgroup {
-  font-weight: bold;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
 }
 
 * {
@@ -261,10 +206,6 @@ blockquote {
   padding: 10px 20px;
   font-size: 18px;
   line-height: 22px;
-}
-
-figure {
-  margin: 0 0 10px;
 }
 
 figcaption {
@@ -509,14 +450,6 @@ textarea.w-select {
   display: flex;
 }
 
-.line {
-  z-index: 4;
-  justify-content: center;
-  align-items: center;
-  line-height: 160%;
-  display: flex;
-}
-
 .div-block-10 {
   cursor: pointer;
   background-color: #fff;
@@ -735,11 +668,6 @@ textarea.w-select {
   color: #000;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  /* line-height: 160%; */
-}
-
-.vector {
-  background-color: #a259ff;
 }
 
 .paragraph-18,
@@ -807,8 +735,6 @@ textarea.w-select {
 }
 
 .column-2 {
-  -webkit-text-fill-color: inherit;
-  background-clip: border-box;
   display: none;
   flex-direction: column;
 }
@@ -921,7 +847,6 @@ textarea.w-select {
   background-color: rgb(255, 255, 255);
   border-radius: 2em;
   box-shadow: 6px 6px 10px rgba(128, 247, 255, 0.574);
-  /* max-width: 100%; */
 }
 
 .txt-up-2 {
@@ -941,7 +866,6 @@ textarea.w-select {
   );
   border-radius: 2em;
   box-shadow: 6px 6px 10px rgba(128, 247, 255, 0.574);
-  /* max-width: 100%; */
 }
 
 @keyframes slideInFromRight {
